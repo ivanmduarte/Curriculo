@@ -1,5 +1,5 @@
 import Background from '../assets/backgroundHeader.svg';
-import { InstagramLogo, GithubLogo, LinkedinLogo, TwitchLogo, UserCircle, FileCode } from 'phosphor-react';
+import { InstagramLogo, GithubLogo, LinkedinLogo, TwitchLogo, UserCircle, FileCode, IdentificationCard, Briefcase, GraduationCap } from 'phosphor-react';
 let data = new Date();
 let anoAtual = data.getFullYear();
 export function Body(){
@@ -25,9 +25,12 @@ export function Body(){
             </header>
 
             <body className="p-5 grid grid-cols-2">
-                <div className="p-1 divide-y">
-                    <div className="pb-3">
-                        <h2 className="font-bold text-sky-900" style={{fontSize:24}}>Sobre</h2>
+                <div className="p-1">
+                    <div className="pb-3 divide-y">
+                        <h2 className="font-bold text-sky-900 flex" style={{fontSize:24}}>
+                            <UserCircle size={32} className="mt-1" /> 
+                            Sobre
+                        </h2>
                         
                         <div>
                             Olá, meu nome é <strong>Ivan Carlos de Melo Duarte</strong>, tenho {anoAtual - 1993} anos,
@@ -36,8 +39,11 @@ export function Body(){
                         </div>
                     </div>
 
-                    <div className="pb-3">
-                        <h2 className="font-bold text-sky-900" style={{fontSize:24}}>Experiência</h2>
+                    <div className="pb-3 divide-y">
+                        <h2 className="font-bold text-sky-900 flex" style={{fontSize:24}}>
+                            <Briefcase size={32} className="mt-1" />
+                            Experiência
+                        </h2>
                         <div>
                             Olá, meu nome é <strong>Ivan Carlos de Melo Duarte</strong>, tenho {anoAtual - 1993} anos,
                             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -45,8 +51,11 @@ export function Body(){
                         </div>
                     </div>
 
-                    <div className="pb-3">
-                        <h2 className="font-bold text-sky-900" style={{fontSize:24}}>Experiência</h2>
+                    <div className="pb-3 divide-y">
+                        <h2 className="font-bold text-sky-900 flex" style={{fontSize:24}}>
+                            <GraduationCap size={32} className="mt-1" />
+                            Educação
+                        </h2>
                         <div>
                             Olá, meu nome é <strong>Ivan Carlos de Melo Duarte</strong>, tenho {anoAtual - 1993} anos,
                             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -58,7 +67,7 @@ export function Body(){
                 <div className="p-1">
                     <div className="pb-3 divide-y">
                         <h2 className="font-bold text-sky-900 flex" style={{fontSize:24}}>
-                            <UserCircle size={32} className="mt-1" />
+                            <IdentificationCard size={32} className="mt-1" />
                             Perfil
                         </h2>
                         <div>
@@ -79,7 +88,7 @@ export function Body(){
                                 <li className="flex mt-1 shadow-md p-3 border rounded">
                                     <img width={48} className="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
                                     <div>
-                                        <p className="font-bold text-lg">HTML ⭐⭐⭐⭐⭐</p>
+                                        <p className="font-bold text-lg">HTML <span className="text-base absolute right-9">🟢🟢🟢🟢🟢</span></p>
                                         <div>
                                             <span><b>Inicio:</b> jun de 2018</span>
                                         </div>
@@ -88,31 +97,41 @@ export function Body(){
                                 <li className="flex mt-1 shadow-md p-3 border rounded">
                                     <img width={48} className="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
                                     <div>
-                                        <p className="font-bold text-lg">JavaScript ⭐⭐⭐⭐⭐</p>
+                                        <p className="font-bold text-lg">JavaScript <span className="text-base absolute right-9">🟢🟢🟢🟢🟢</span></p>
                                         <div>
-                                            <span><b>Inicio:</b> jun de 2018 - <b>Frameworks:</b> jQuery</span>
+                                            <span><b>Inicio:</b> jun de 2018 | <b>Frameworks:</b> jQuery</span>
                                         </div>
                                     </div>
                                 </li>
                                 <li className="flex mt-1 shadow-md p-3 border rounded">
                                     <img width={48} className="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
                                     <div>
-                                        <p className="font-bold text-lg">CSS ⭐⭐⭐⭐</p>
+                                        <p className="font-bold text-lg">CSS <span className="text-base absolute right-9">🟢🟢🟢🟢<span className="opacity-30">⚫</span></span></p>
                                         <div>
-                                            <span><b>Inicio:</b> jun de 2018 - <b>Frameworks:</b> Bootstrap, Materialize</span>
+                                            <span><b>Inicio:</b> jun de 2018 | <b>Frameworks:</b> Bootstrap, Materialize</span>
                                         </div>
                                     </div>
                                 </li>
                                 <li className="flex mt-1 shadow-md p-3 border rounded">
                                     <img width={48} className="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
                                     <div>
-                                        <p className="font-bold text-lg">PHP ⭐⭐⭐⭐</p>
+                                        <p className="font-bold text-lg">PHP <span className="text-base absolute right-9">🟢🟢🟢🟢<span className="opacity-30">⚫</span></span></p>
                                         <div>
-                                            <span><b>Inicio:</b> jun de 2018 - <b>Frameworks:</b> Codeigniter, Laravel</span>
+                                            <span><b>Inicio:</b> jun de 2018 | <b>Frameworks:</b> Codeigniter, Laravel</span>
                                         </div>
                                     </div>
                                 </li>
-                                
+                                <li className="flex mt-1 shadow-md p-3 border rounded">
+                                    <img width={48} className="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                                    <div>
+                                        <p className="font-bold text-lg">GIT <span className="text-base absolute right-9">🟢🟢🟢🟢<span className="opacity-30">⚫</span></span></p>
+                                        <div>
+                                            <span><b>Inicio:</b> jun de 2018 | GitHub, GitLab...</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ivanmduarte&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+                                <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ivanmduarte&layout=compact&langs_count=7&theme=dracula"/>
                             </ul>
                         
                         </div>
